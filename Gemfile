@@ -1,9 +1,14 @@
 source 'https://rubygems.org'
-
+ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-
+# add the authentication devise gem
+gem 'devise'
+# add bootstrap to the system
+gem 'twitter-bootstrap-rails'
+# add the devise bootstrap features.
+gem 'devise-bootstrap-views'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -49,6 +54,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  
 end
 
 
