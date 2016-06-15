@@ -3,12 +3,20 @@ ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
+
+################My Gems################
+
 # add the authentication devise gem
 gem 'devise'
 # add bootstrap to the system
 gem 'twitter-bootstrap-rails'
 # add the devise bootstrap features.
 gem 'devise-bootstrap-views'
+# add the stock quote gem
+gem "stock_quote"
+
+#################Done###################
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
