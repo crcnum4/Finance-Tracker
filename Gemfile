@@ -14,7 +14,8 @@ gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 # add the stock quote gem
 gem "stock_quote"
-
+# add font awesome assets
+gem "font-awesome-rails"
 #################Done###################
 
 # Use SCSS for stylesheets
