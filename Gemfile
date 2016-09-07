@@ -50,6 +50,8 @@ group :development, :test do
   gem 'byebug'
     # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  
+  gem 'pry', '0.10.4'
 end
 
 group :development do

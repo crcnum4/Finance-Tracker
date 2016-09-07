@@ -1,5 +1,5 @@
 <div id="friend-lookup">
-  <h3>Search for Friends</h3>
+  <h3>Search for friends</h3>
   <%= form_tag search_friends_path, remote: true, method: :get, id: 'friend-lookup-form' do %>
     <div class="form-group row no-padding text-center col-md-12">
       <div class="col-md-10">
@@ -21,14 +21,15 @@
           <tbody>
             <% @users.each do |user| %>
               <tr>
-                <td><strong>Name:</strong> <%= @user.full_name %></td>
-                <td><strong>Email:</strong> <%= @user.email %></td>
-                <td><strong>Profile:</strong><%= link_to "View Profile", user_path(user), 
-                      class: 'btn btn-xs btn-success' %>
+                <td><strong>Name:</strong> <%= user.full_name %></td>
+                <td><strong>Email:</strong> <%= user.email %></td>
+                <td><strong>Profile:</strong><%= link_to "View Profile", user_path(user),
+                                      class: 'btn btn-xs btn-success' %>
                   <% if current_user.not_friends_with?(user.id) %>
-                    <%= link_to "Add as my friend", add_friend_path(user: current_user, friend: user), class: 'btn btn-xs btn-success', method: :post %>
+                    <%= link_to "Add as my friend", add_friend_path(user: current_user, friend: user),
+                                      class: "btn btn-xs btn-success", method: :post %>
                   <% else %>
-                    <span class="label label-primary">You are friends</span> 
+                    <span class="label label-primary">You are friends</span>
                   <% end %>
                 </td>
               </tr>
@@ -37,7 +38,7 @@
         </table>
       </div>
     <% else %>
-      <p class="lead col-md-12">No people match this search criteria.</p>
+      <p class='lead col-md-12'>No people match this search criteria</p>
     <% end %>
   <% end %>
   <div id='friend-lookup-errors'></div>
